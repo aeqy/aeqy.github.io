@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="animated-background"></div>
+<header>
+    欢迎👏加入 Aeqy 组织
+</header>
+
+<button class="cool-button" onclick="scrollToContent()">继续关注</button>
+
+<section id="content" style="height: 600px; background: white; padding-top: 20px;">
+    <h2 style="color: black; text-align: center;">组织离不开你的贡献</h2>
+</section>
+
+<footer>
+    © 2024 aeqy.github.io
+</footer>
+
+<script>
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>
