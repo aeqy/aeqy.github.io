@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯美导航栏</title>
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-<div class="animated-background"></div>
-<header>
-    欢迎👏加入 Aeqy 组织
-</header>
+<!-- 项目简介区域 -->
+<div class="intro">
+    <h1>出入库管理系统项目</h1>
+    <p>涵盖前端、后端、数据库等技术</p>
+</div>
 
-<main>
-    <section id="welcome">
-        <h2>欢迎来到EQY.cc</h2>
-        <p>这里是关于EQY.cc的简短介绍，我们专注于提供…</p>
-    </section>
-</main>
+<!--&lt;!&ndash; 主导航栏 &ndash;&gt;-->
+<!--<nav class="navbar">-->
+<!--    <a href="#home">首页</a>-->
+<!--    <a href="/swagger">Swagger API</a>-->
+<!--    <a href="#/i.html">库存管理</a>-->
+<!--    <a href="#services">服务</a>-->
+<!--    <a href="#contact">联系我们</a>-->
+<!--</nav>-->
 
-<button class="cool-button" onclick="scrollToContent()">继续关注</button>
-
-<section id="content" style="height: 600px; background: white; padding-top: 20px;">
-    <h2 style="color: black; text-align: center;">组织离不开你的贡献</h2>
-</section>
-
-<footer>
-    © 2024 aeqy.github.io
-</footer>
-
-<script>
-    function scrollToContent() {
-        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
-    }
-</script>
+<!-- 项目详细导航栏 -->
+<nav class="project-nav">
+    <div class="nav-item">
+        <a href="#project-intro">项目介绍</a>
+        <!-- 可选描述，可根据需要添加 -->
+    </div>
+    <div class="nav-item">
+        <a href="https://github.com/aeqy/covben" target="_blank" rel="noopener noreferrer">前端</a>
+        <div class="desc">前端采用 HTML、CSS、TypeScript 构建用户界面</div>
+    </div>
+    <div class="nav-item">
+        <a href="https://github.com/aeqy/co"  target="_blank" rel="noopener noreferrer">后端</a>
+        <div class="desc">后端基于 asp.net 构建服务端逻辑</div>
+    </div>
+    <div class="nav-item">
+        <a href="#database">数据库</a>
+        <div class="desc">数据库使用开源  PostgreSQL 进行数据存储</div>
+    </div>
+    <div class="nav-item">
+        <a href="#other">其他</a>
+        <div class="desc">期待你的加入
+            <a href="https://github.com/aeqy/aeqy.github.io/issues">留言</a>
+        </div>
+        <!-- 可选描述 -->
+    </div>
+</nav>
 </body>
 </html>
